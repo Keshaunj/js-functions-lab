@@ -8,20 +8,21 @@ If they're equal, return either one.
 Exercise 1 has been completed for you:
 */
 
-//const maxOfTwoNumbers = (num5,num6) => {
+const maxOfTwoNumbers = (num5,num6) =>{
 
     num5 = 5
     num6 = 6
-   console.log(num5,num6)  
-    // goal - compare the two numbers and return
+   // console.log(num5,num6)  
+    
     if (num5 >= num6) {
       return num5
     } else {
       return num6
     }
-  
-  
-  //console.log('Exercise 1 Result:', maxOfTwoNumbers(num5, mum6)
+  }
+    
+ 
+ console.log('Exercise 1 Result:', maxOfTwoNumbers(5, 6))
 
   
 
@@ -45,15 +46,91 @@ Complete the exercise in the space below:
 
 function isAdult(age) {
   if (age >= 18) {
-    return 'Adult';
+    return 'Adult'
   } else {
-    return 'Minor';
+    return 'Minor'
   }
 }
-//console.log('Exercise 2 Result:', isAdult(21));
+console.log('Exercise 2 Result:', isAdult(100))
+
+/*
+Exercise 3: isCharAVowel()
+
+Write a function named isCharAVowel that takes a single character as 
+an argument. It should return true if the character is a vowel and 
+false otherwise. For the purposes of this exercise, the character 
+y should not be considered a vowel.
+
+Example: isCharAVowel('a') should return true.
+
+Complete the exercise in the space below:
+*/
+
+function isCharAVowel(look) {
+  if (look === "a" || look === "e" || look === "i" || look === "o" || look === "u") {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log('Exercise 3 Result:', isCharAVowel('a')); 
 
 
 
-num3 =3
-num4 = 4
-console.log(num3,num4)
+/*
+Exercise 4: generateEmail()
+
+Create a function named generateEmail. It should take two strings: 
+a name and a domain. It should return a simple email address.
+
+Example: generateEmail('johnsmith', 'example.com') 
+should return 'johnsmith@example.com'.
+
+Complete the exercise in the space below:
+*/
+
+
+function generateEmail(name, domain) {
+  return `${name}@${domain}`;
+}
+
+
+console.log(generateEmail('keshaun', '@gmail.com')); 
+//'johnsmith@example.com'
+
+// -----------------------------------------------------//
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+
+function greetUser (name, timeofday){
+  return 'How are you today,? Good Morning'
+  }
+  
+  console.log('Exercise 5 Result:', greetUser('keshaun', "morning"));
+  
+
+
+
+
