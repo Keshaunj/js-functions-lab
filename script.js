@@ -92,7 +92,7 @@ Complete the exercise in the space below:
 
 
 function generateEmail(name, domain) {
-  return `${name}@${domain}`;
+  return `${name}${domain}`;
 }
 
 
